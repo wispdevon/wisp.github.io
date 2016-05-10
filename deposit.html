@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {font-family: Arial, Helvetica, sans-serif;}
+</style>
+</head>
+<body style="background-color:#f7f7f7;">
+<div style="margin:auto; background:#fff; width:250px;">
+<form name="form1"><table width="100%">
+<tr><td width="50%">Первый взнос</td><td width="50%"><input type="text" size="10" name="first" value="30000"></td><tr>
+<tr><td>Ежемесячное пополнение</td><td><input type="text" size="10" name="monthly" value="10000"></td><tr>
+<tr><td>Проценты</td><td><input type="text" size="10" name="percent" value="11"></td><tr>
+<tr><td>Срок вклада</td><td><select name="time">
+<option value="3">3 месяца</option>
+<option value="6">6 месяцев</option>
+<option value="12" selected>1 год</option>
+<option value="24">2 года</option>
+<option value="36">3 года</option>
+<option value="48">4 года</option>
+<option value="60">5 лет</option>
+</select></td></tr>
+<tr><td>Капитализация</td><td><input type="checkbox" name="capitalization" checked></td></tr>
+</table></form>
+<br/>
+<table width="100%">
+<tr><td width="40%">Вложено</td><td width="60%"><a id="investing"></a></td></tr>
+<tr><td>Получено</td><td><a id="profit"></a> (<a id="profit_p"></a>%)</td></tr>
+<tr><td>В среднем</td><td><a id="profit_m"></a> в месяц</td></tr>
+</table>
+<br/>
+<table width="100%" cellpadding="0" cellspacing="0"><tr height=50>
+<td style="background-color:#8af;" id="chart"></td>
+<td style="background-color:#f76;" width="100%"></td>
+</tr></table>
+</div>
+<script>
+form=document.forms.form1;
+form.elements.first.oninput=calculate;
+form.elements.monthly.oninput=calculate;
+form.elements.percent.oninput=calculate;
+form.elements.time.onchange=calculate;
+form.elements.capitalization.onclick=calculate;
+function calculate(){
+	f=+form.elements.first.value;
+	m=+form.elements.monthly.value;
+	p=+form.elements.percent.value;
+	t=+form.elements.time.value;
+	c=form.elements.capitalization.checked;
+	s=f; x=0;
+	for(i=0;i<t;i++){
+		if(c)s=s*(1+p/1200);
+		else x=x+s*p/1200;
+		if(i>0&&i<t-1) s=s+m;
+	}
+	a=f+m*(t-2);
+	x=s+x-a;
+	document.getElementById("investing").innerHTML=a;
+	document.getElementById("profit").innerHTML=Math.round(x);
+	document.getElementById("profit_p").innerHTML=Math.round(x/(m*t+f)*1000)/10;
+	document.getElementById("profit_m").innerHTML=Math.round(x/t);
+	document.getElementById("chart").style.width=Math.round((a/(a+x)*100))+"%";
+}calculate();
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter23534974 = new Ya.Metrika({
+                    id:23534974,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/23534974" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
