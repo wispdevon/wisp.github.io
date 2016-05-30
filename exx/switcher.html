@@ -1,0 +1,92 @@
+﻿<!doctype html>
+<html>
+<head>
+<style>
+* {font-family: Arial;}
+</style>
+</head>
+<body>
+<form name="form1"><table>
+<tr><td><textarea type="text" rows="10" cols="50" name="a" oninput="calculate()"></textarea></td>
+<td><textarea type="text" rows="10" cols="50" name="b" disabled></textarea></td></tr>
+<tr><td>Переключить раскладку: <input type="checkbox" name="tr" onclick="calculate()" checked/></td><td>Регистр: <select onChange="calculate()" name="mode">
+<option value="0" selected>Как есть</option>
+<option value="1">Наоборот</option>
+<option value="2">Все заглавные</option>
+<option value="3">Все прописные</option>
+</select></td></tr>
+</table></form>
+<script>
+form=document.forms.form1;
+x="`qwertyuiop[]asdfghjkl;'zxcvbnm,./~@#$^&|QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>?ёйцукенгшщзхъфывапролджэячсмитьбю.Ё\"№;:?/ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ,";
+y="ёйцукенгшщзхъфывапролджэячсмитьбю.Ё\"№;:?/ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ,`qwertyuiop[]asdfghjkl;'zxcvbnm,./~@#$^&|QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>?";
+function calculate()
+{	a=form.elements.a.value;
+	tr=form.elements.tr.checked;
+	mode=+form.elements.mode.value;
+	b="";
+	if(tr)
+	{	for(i=0;i<a.length;i++)
+		{	j=x.indexOf(a.charAt(i));
+			if(j>=0) b=b+y.charAt(j);
+			else b=b+a.charAt(i);
+		}
+		a=b; b="";
+	}
+	switch(mode)
+	{	case 0: b=a; break;
+		case 1:
+			for(i=0;i<a.length;i++)
+			{	a1=a.charAt(i);
+				u=a1.toUpperCase();
+				l=a1.toLowerCase();
+				if(u!=l) a1==u?a1=l:a1=u;
+				b=b+a1;
+			}break;
+		case 2: b=a.toUpperCase(); break;
+		case 3: b=a.toLowerCase(); break;
+	}
+	form.elements.b.value=b;
+}calculate();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-76637132-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter23534974 = new Ya.Metrika({
+                    id:23534974,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/23534974" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
