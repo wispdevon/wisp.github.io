@@ -1,0 +1,39 @@
+* {font-family: Calibri, Arial;}
+body {margin: 0;}
+p {text-align:justify;}
+#main {
+	width: 760px;
+	position: absolute;
+	left: calc(50% - 150px);
+	margin: 10px 0 20px 0;
+	padding: 0 20px 20px 20px;
+	background-color: #eee;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+#bookmarks {
+	width: 480px;
+	position: fixed;
+	left: calc(50% - 650px);
+	margin: 10px 20px 0 0;
+}
+#bookmarks > div {
+	padding: 5px 0 5px 10px;
+}
+img, table:not(.prev-next) {
+	margin: 10px;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+.active {
+	background-color: #eee;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+table:not(.prev-next) {
+	background-color: #fff;
+	padding: 5px;
+}
+td {padding: 2px;}
+ol, h3 {margin: 0;}
+a:link, a:visited {
+	color: #07f;
+	text-decoration: none;
+}
