@@ -60,6 +60,7 @@ a:link, a:visited {
 	position: absolute;
 	left: calc(50% - 150px);
 	top: calc(10px + 652px + 20px);
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
 }
 .color1 {
 	height: 40px;
