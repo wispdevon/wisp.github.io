@@ -1,6 +1,7 @@
+html {overflow-y: scroll;}
 * {font-family: Calibri, Arial;}
 body {margin: 0;}
-p {text-align:justify;}
+#main p {text-align: justify;}
 #main {
 	width: 760px;
 	position: absolute;
@@ -19,7 +20,7 @@ p {text-align:justify;}
 #bookmarks > div {
 	padding: 5px 0 5px 10px;
 }
-img, table:not(.prev-next) {
+#main img, #main table:not(.prev-next) {
 	margin: 10px;
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
 }
@@ -27,13 +28,48 @@ img, table:not(.prev-next) {
 	background-color: #eee;
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
 }
-table:not(.prev-next) {
+#main table:not(.prev-next) {
 	background-color: #fff;
 	padding: 5px;
 }
-td {padding: 2px;}
+#main td {padding: 2px;}
 ol, h3 {margin: 0;}
 a:link, a:visited {
 	color: #07f;
 	text-decoration: none;
 }
+
+#external {
+	height: 528px;
+	width: 792px;
+	background-position: center;
+	image-rendering: pixelated;
+}
+#calc *:not(#external) {
+	text-align: center;
+}
+#calc {
+	position: absolute;
+	left: calc(50% - 150px);
+	top: 10px;
+	padding: 4px 4px 0 4px;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+#l3 * {width: 66px}
+#button {
+	position: absolute;
+	left: calc(50% - 150px);
+	top: calc(10px + 652px + 20px);
+}
+.color1 {
+	height: 40px;
+	background-color: #fa3;
+	box-shadow: -4px 0 0 #fa3;
+}
+.color2 {
+	height: 40px;
+	background-color: #38f;
+	box-shadow: 4px 0 0 #38f;
+}
+input[type=range] {width: 300px;}
+input[type=text] {width: 33px;}
