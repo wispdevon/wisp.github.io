@@ -1,0 +1,27 @@
+﻿<krpano>
+	
+	<!-- the skin -->
+	<include url="skin/defaultskin.xml" />
+	
+	<!-- view settings -->
+	<view hlookat="-35" vlookat="-15" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
+	
+
+	<preview url="pano.tiles/preview.jpg" />
+
+	<image type="CUBE" multires="true" tilesize="512">
+		<level tiledimagewidth="7680" tiledimageheight="7680">
+			<cube url="pano.tiles/%s/l4/%v/l4_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="3840" tiledimageheight="3840">
+			<cube url="pano.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="1792" tiledimageheight="1792">
+			<cube url="pano.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="1024" tiledimageheight="1024">
+			<cube url="pano.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+		</level>
+	</image>
+
+</krpano>
