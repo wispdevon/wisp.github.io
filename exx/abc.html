@@ -2,34 +2,53 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
 * {font-family: Arial;}
-a {color:#f00; font-weight:bold;}
+.en {color:#f00; font-weight:bold;}
+.num {color:#00f; font-weight:bold;}
 </style>
 <style type="text/css"></style></head>
 <body>
 <form name="form1" id="del">
 <textarea type="text" rows="25" cols="100" name="a"></textarea><br/>
-<input type="button" value="fgsfds" onclick="calculate()"/>
+<input type="button" value="Highlight" onclick="calculate()"/>
 </form>
-<p id=b></p>
+<p id=p></p>
 <script>
 form=document.forms.form1;
 function calculate()
-{	d=65;
-	u=122;
-	b="<p>";
-	a=form.elements.a.value;
-	for(i=0;i<a.length;i++)
-	{	if(a.charCodeAt(i)>=d&&a.charCodeAt(i)<=u)
-		{	if(i==0||a.charCodeAt(i-1)<=d||a.charCodeAt(i-1)>=u) b=b+"<a>";
-		}else
-		{	if(a.charCodeAt(i)>=d||a.charCodeAt(i)<=u) b=b+"</a>";
-		}
-		if(a.charCodeAt(i)==10) b=b+"<br/>";
-		else b=b+a.charAt(i);
-	}
-	d=document.getElementById("del");
-	d.parentNode.removeChild(d);
-	document.getElementById("b").innerHTML=b+"</p>";
+{
+    _a = 65;
+    _z = 122;
+    _0 = 48;
+    _9 = 57;
+    p = "<p>";
+    a = form.elements.a.value;
+    for (i = 0; i < a.length; i++)
+    {
+        if (a.charCodeAt(i) >= _a && a.charCodeAt(i) <= _z)
+        {
+            if (i == 0 || a.charCodeAt(i - 1) < _a || a.charCodeAt(i - 1) > _z)
+                p = p + "<a class=en>";
+        }
+        else
+        {
+            if (a.charCodeAt(i) >= _0 && a.charCodeAt(i) <= _9)
+            {
+                if (i == 0 || a.charCodeAt(i - 1) < _0 || a.charCodeAt(i - 1) > _9)
+                    p = p + "<a class=num>";
+            }
+            else
+            {
+                if (i > 0 && (a.charCodeAt(i - 1) >= _a && a.charCodeAt(i - 1) <= _z || a.charCodeAt(i - 1) >= _0 && a.charCodeAt(i - 1) <= _9))
+                    p = p + "</a>";
+            }
+        }
+        if (a.charCodeAt(i) == 10)
+            p = p + "<br/>";
+        else p = p + a.charAt(i);
+    }
+    del = document.getElementById("del");
+    del.parentNode.removeChild(del);
+    document.getElementById("p").innerHTML = p + "</p>";
 }
 </script>
 <script>
