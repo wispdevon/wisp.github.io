@@ -4,7 +4,7 @@
 	<include url="skin/defaultskin.xml" />
 	
 	<!-- view settings -->
-	<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
+	<view hlookat="0" vlookat="-20" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
 	
 
 	<preview url="pano.tiles/preview.jpg" />
