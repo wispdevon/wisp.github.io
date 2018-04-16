@@ -73,341 +73,340 @@
 		if(startactions !== null, startactions() );
 	</action>
 
-	<scene name="scene__17-07_DSC_9246-9274_pano" title="%5B17-07%5DDSC_9246-9274_pano" onstart="" thumburl="panos/_17-07_DSC_9246-9274_pano.tiles/thumb.jpg" lat="43.97853000" lng="39.87414333" heading="0.0">
-
-		<view hlookat="140.0" vlookat="-20.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/_17-07_DSC_9246-9274_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="7680" tiledimageheight="7680">
-				<cube url="panos/_17-07_DSC_9246-9274_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3840" tiledimageheight="3840">
-				<cube url="panos/_17-07_DSC_9246-9274_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1792" tiledimageheight="1792">
-				<cube url="panos/_17-07_DSC_9246-9274_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_17-07_DSC_9246-9274_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__17-07_DSC_8742-8768_pano" title="%5B17-07%5DDSC_8742-8768_pano" onstart="" thumburl="panos/_17-07_DSC_8742-8768_pano.tiles/thumb.jpg" lat="43.97865500" lng="39.88078333" heading="0.0">
-
-		<view hlookat="0.0" vlookat="-20.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/_17-07_DSC_8742-8768_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="7680" tiledimageheight="7680">
-				<cube url="panos/_17-07_DSC_8742-8768_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3840" tiledimageheight="3840">
-				<cube url="panos/_17-07_DSC_8742-8768_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1792" tiledimageheight="1792">
-				<cube url="panos/_17-07_DSC_8742-8768_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_17-07_DSC_8742-8768_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__17-07_DSC_8543-8568_pano" title="%5B17-07%5DDSC_8543-8568_pano" onstart="" thumburl="panos/_17-07_DSC_8543-8568_pano.tiles/thumb.jpg" lat="44.01167000" lng="39.85885667" heading="0.0">
-
-		<view hlookat="150.0" vlookat="-30.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/_17-07_DSC_8543-8568_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="7680" tiledimageheight="7680">
-				<cube url="panos/_17-07_DSC_8543-8568_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3840" tiledimageheight="3840">
-				<cube url="panos/_17-07_DSC_8543-8568_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1792" tiledimageheight="1792">
-				<cube url="panos/_17-07_DSC_8543-8568_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_17-07_DSC_8543-8568_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__17-07_DSC_7881-7908_pano" title="%5B17-07%5DDSC_7881-7908_pano" onstart="" thumburl="panos/_17-07_DSC_7881-7908_pano.tiles/thumb.jpg" lat="44.01854833" lng="39.97090500" heading="0.0">
-
-		<view hlookat="143.0" vlookat="-18.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/_17-07_DSC_7881-7908_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="7680" tiledimageheight="7680">
-				<cube url="panos/_17-07_DSC_7881-7908_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3840" tiledimageheight="3840">
-				<cube url="panos/_17-07_DSC_7881-7908_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1792" tiledimageheight="1792">
-				<cube url="panos/_17-07_DSC_7881-7908_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_17-07_DSC_7881-7908_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__17-07_DSC_7552-7577_pano" title="%5B17-07%5DDSC_7552-7577_pano" onstart="" thumburl="panos/_17-07_DSC_7552-7577_pano.tiles/thumb.jpg" lat="44.01854833" lng="39.97090500" heading="0.0">
-
-		<view hlookat="-35.0" vlookat="-15.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/_17-07_DSC_7552-7577_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="7680" tiledimageheight="7680">
-				<cube url="panos/_17-07_DSC_7552-7577_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3840" tiledimageheight="3840">
-				<cube url="panos/_17-07_DSC_7552-7577_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1792" tiledimageheight="1792">
-				<cube url="panos/_17-07_DSC_7552-7577_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_17-07_DSC_7552-7577_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__16-05_DSC_3598-3622_pano" title="%5B16-05%5DDSC_3598-3622_pano" onstart="" thumburl="panos/_16-05_DSC_3598-3622_pano.tiles/thumb.jpg" lat="55.76195500" lng="44.40022167" heading="0.0">
-
-		<view hlookat="110.0" vlookat="-30.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/_16-05_DSC_3598-3622_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="7680" tiledimageheight="7680">
-				<cube url="panos/_16-05_DSC_3598-3622_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3840" tiledimageheight="3840">
-				<cube url="panos/_16-05_DSC_3598-3622_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1792" tiledimageheight="1792">
-				<cube url="panos/_16-05_DSC_3598-3622_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_16-05_DSC_3598-3622_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__16-04_DSC_3372-3397_pano" title="%5B16-04%5DDSC_3372-3397_pano" onstart="" thumburl="panos/_16-04_DSC_3372-3397_pano.tiles/thumb.jpg" lat="56.01825000" lng="43.92516667" heading="0.0">
+	<scene name="000" title="[11-07]_DSC1038-1066_pano" onstart="" thumburl="000/thumb.jpg" lat="56.19393833" lng="43.81173833" heading="0.0">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/_16-04_DSC_3372-3397_pano.tiles/preview.jpg" />
+		<preview url="000/preview.jpg" />
 
 		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="7680" tiledimageheight="7680">
-				<cube url="panos/_16-04_DSC_3372-3397_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3840" tiledimageheight="3840">
-				<cube url="panos/_16-04_DSC_3372-3397_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1792" tiledimageheight="1792">
-				<cube url="panos/_16-04_DSC_3372-3397_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_16-04_DSC_3372-3397_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__14-07_DSC_2410-2425_pano" title="%5B14-07%5DDSC_2410-2425_pano" onstart="" thumburl="panos/_14-07_DSC_2410-2425_pano.tiles/thumb.jpg" lat="56.01225333" lng="43.87863000" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-29.304" vlookatmax="29.304" />
-
-		<preview url="panos/_14-07_DSC_2410-2425_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="6400" tiledimageheight="6400">
-				<cube url="panos/_14-07_DSC_2410-2425_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
 			<level tiledimagewidth="3200" tiledimageheight="3200">
-				<cube url="panos/_14-07_DSC_2410-2425_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+				<cube url="000/%s/l3/%v/l3_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1536" tiledimageheight="1536">
-				<cube url="panos/_14-07_DSC_2410-2425_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+				<cube url="000/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/_14-07_DSC_2410-2425_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+				<cube url="000/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene__13-09__DSC6810-6818_pano" title="%5B13-09%5D_DSC6810-6818_pano" onstart="" thumburl="panos/_13-09__DSC6810-6818_pano.tiles/thumb.jpg" lat="44.76107833" lng="34.41126333" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-37.026" vlookatmax="37.026" />
-
-		<preview url="panos/_13-09__DSC6810-6818_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="6400" tiledimageheight="6400">
-				<cube url="panos/_13-09__DSC6810-6818_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3200" tiledimageheight="3200">
-				<cube url="panos/_13-09__DSC6810-6818_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1536" tiledimageheight="1536">
-				<cube url="panos/_13-09__DSC6810-6818_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/_13-09__DSC6810-6818_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__13-09__DSC6752-6761_pano" title="%5B13-09%5D_DSC6752-6761_pano" onstart="" thumburl="panos/_13-09__DSC6752-6761_pano.tiles/thumb.jpg" lat="44.77712833" lng="34.37429667" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-37.080" vlookatmax="37.080" />
-
-		<preview url="panos/_13-09__DSC6752-6761_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="6400" tiledimageheight="6400">
-				<cube url="panos/_13-09__DSC6752-6761_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3200" tiledimageheight="3200">
-				<cube url="panos/_13-09__DSC6752-6761_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1536" tiledimageheight="1536">
-				<cube url="panos/_13-09__DSC6752-6761_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/_13-09__DSC6752-6761_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__13-09__DSC6734-6741_pano" title="%5B13-09%5D_DSC6734-6741_pano" onstart="" thumburl="panos/_13-09__DSC6734-6741_pano.tiles/thumb.jpg" lat="44.73728833" lng="34.28775833" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-34.488" vlookatmax="34.488" />
-
-		<preview url="panos/_13-09__DSC6734-6741_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="6400" tiledimageheight="6400">
-				<cube url="panos/_13-09__DSC6734-6741_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3200" tiledimageheight="3200">
-				<cube url="panos/_13-09__DSC6734-6741_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1536" tiledimageheight="1536">
-				<cube url="panos/_13-09__DSC6734-6741_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/_13-09__DSC6734-6741_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__13-07_270713_pano" title="%5B13-07%5D270713_pano" onstart="" thumburl="panos/_13-07_270713_pano.tiles/thumb.jpg" lat="56.01824500" lng="43.92497500" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-39.163" vlookatmax="39.163" />
-
-		<preview url="panos/_13-07_270713_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="4096" tiledimageheight="4096">
-				<cube url="panos/_13-07_270713_pano.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="panos/_13-07_270713_pano.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_13-07_270713_pano.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__13-06__DSC6173-6182_pano" title="%5B13-06%5D_DSC6173-6182_pano" onstart="" thumburl="panos/_13-06__DSC6173-6182_pano.tiles/thumb.jpg" lat="56.00548833" lng="43.93960333" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-34.722" vlookatmax="34.722" />
-
-		<preview url="panos/_13-06__DSC6173-6182_pano.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="6400" tiledimageheight="6400">
-				<cube url="panos/_13-06__DSC6173-6182_pano.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="3200" tiledimageheight="3200">
-				<cube url="panos/_13-06__DSC6173-6182_pano.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="1536" tiledimageheight="1536">
-				<cube url="panos/_13-06__DSC6173-6182_pano.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
-			</level>
-			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/_13-06__DSC6173-6182_pano.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene__11-07__DSC1154-1182_pano" title="%5B11-07%5D_DSC1154-1182_pano" onstart="" thumburl="panos/_11-07__DSC1154-1182_pano.tiles/thumb.jpg" lat="56.19289167" lng="43.81063333" heading="0.0">
+	<scene name="001" title="[11-07]_DSC1154-1182_pano" onstart="" thumburl="001/thumb.jpg" lat="56.19289167" lng="43.81063333" heading="0.0">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/_11-07__DSC1154-1182_pano.tiles/preview.jpg" />
+		<preview url="001/preview.jpg" />
 
 		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
 			<level tiledimagewidth="3200" tiledimageheight="3200">
-				<cube url="panos/_11-07__DSC1154-1182_pano.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+				<cube url="001/%s/l3/%v/l3_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1536" tiledimageheight="1536">
-				<cube url="panos/_11-07__DSC1154-1182_pano.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="001/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/_11-07__DSC1154-1182_pano.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="001/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 	
-	<scene name="scene__11-07__DSC1038-1066_pano" title="%5B11-07%5D_DSC1038-1066_pano" onstart="" thumburl="panos/_11-07__DSC1038-1066_pano.tiles/thumb.jpg" lat="56.19393833" lng="43.81173833" heading="0.0">
+	<scene name="002" title="[13-06]_DSC6173-6182_pano" onstart="" thumburl="002/thumb.jpg" lat="56.00548833" lng="43.93960333" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-34.722" vlookatmax="34.722" />
 
-		<preview url="panos/_11-07__DSC1038-1066_pano.tiles/preview.jpg" />
+		<preview url="002/preview.jpg" />
 
 		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="6400" tiledimageheight="6400">
+				<cube url="002/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
 			<level tiledimagewidth="3200" tiledimageheight="3200">
-				<cube url="panos/_11-07__DSC1038-1066_pano.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+				<cube url="002/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
 			</level>
 			<level tiledimagewidth="1536" tiledimageheight="1536">
-				<cube url="panos/_11-07__DSC1038-1066_pano.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="002/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
 			</level>
 			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/_11-07__DSC1038-1066_pano.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="002/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
+	<scene name="003" title="[13-07]270713_pano" onstart="" thumburl="003/thumb.jpg" lat="56.01824500" lng="43.92497500" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-39.163" vlookatmax="39.163" />
+
+		<preview url="003/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="4096" tiledimageheight="4096">
+				<cube url="003/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="2048" tiledimageheight="2048">
+				<cube url="003/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="003/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="004" title="[13-09]_DSC6734-6741_pano" onstart="" thumburl="004/thumb.jpg" lat="44.73728833" lng="34.28775833" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-34.488" vlookatmax="34.488" />
+
+		<preview url="004/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="6400" tiledimageheight="6400">
+				<cube url="004/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3200" tiledimageheight="3200">
+				<cube url="004/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="004/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="004/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="005" title="[13-09]_DSC6752-6761_pano" onstart="" thumburl="005/thumb.jpg" lat="44.77712833" lng="34.37429667" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-37.080" vlookatmax="37.080" />
+
+		<preview url="005/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="6400" tiledimageheight="6400">
+				<cube url="005/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3200" tiledimageheight="3200">
+				<cube url="005/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="005/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="005/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="006" title="[13-09]_DSC6810-6818_pano" onstart="" thumburl="006/thumb.jpg" lat="44.76107833" lng="34.41126333" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-37.026" vlookatmax="37.026" />
+
+		<preview url="006/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="6400" tiledimageheight="6400">
+				<cube url="006/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3200" tiledimageheight="3200">
+				<cube url="006/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="006/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="006/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="007" title="[14-07]DSC_2410-2425_pano" onstart="" thumburl="007/thumb.jpg" lat="56.01225333" lng="43.87863000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-29.304" vlookatmax="29.304" />
+
+		<preview url="007/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="6400" tiledimageheight="6400">
+				<cube url="007/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3200" tiledimageheight="3200">
+				<cube url="007/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="007/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="007/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="008" title="[16-04]DSC_3372-3397_pano" onstart="" thumburl="008/thumb.jpg" lat="56.01825000" lng="43.92516667" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="008/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="7680" tiledimageheight="7680">
+				<cube url="008/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3840" tiledimageheight="3840">
+				<cube url="008/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1792" tiledimageheight="1792">
+				<cube url="008/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="008/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="009" title="[16-05]DSC_3598-3622_pano" onstart="" thumburl="009/thumb.jpg" lat="55.76195500" lng="44.40022167" heading="0.0">
+
+		<view hlookat="110.0" vlookat="-30.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="009/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="7680" tiledimageheight="7680">
+				<cube url="009/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3840" tiledimageheight="3840">
+				<cube url="009/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1792" tiledimageheight="1792">
+				<cube url="009/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="009/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="010" title="[17-07]DSC_7552-7577_pano" onstart="" thumburl="010/thumb.jpg" lat="44.01854833" lng="39.97090500" heading="0.0">
+
+		<view hlookat="-35.0" vlookat="-15.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="010/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="7680" tiledimageheight="7680">
+				<cube url="010/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3840" tiledimageheight="3840">
+				<cube url="010/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1792" tiledimageheight="1792">
+				<cube url="010/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="010/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="011" title="[17-07]DSC_7881-7908_pano" onstart="" thumburl="011/thumb.jpg" lat="44.01854833" lng="39.97090500" heading="0.0">
+
+		<view hlookat="143.0" vlookat="-18.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="011/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="7680" tiledimageheight="7680">
+				<cube url="011/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3840" tiledimageheight="3840">
+				<cube url="011/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1792" tiledimageheight="1792">
+				<cube url="011/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="011/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="012" title="[17-07]DSC_8543-8568_pano" onstart="" thumburl="012/thumb.jpg" lat="44.01167000" lng="39.85885667" heading="0.0">
+
+		<view hlookat="150.0" vlookat="-30.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="012/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="7680" tiledimageheight="7680">
+				<cube url="012/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3840" tiledimageheight="3840">
+				<cube url="012/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1792" tiledimageheight="1792">
+				<cube url="012/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="012/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="013" title="[17-07]DSC_8742-8768_pano" onstart="" thumburl="013/thumb.jpg" lat="43.97865500" lng="39.88078333" heading="0.0">
+
+		<view hlookat="0.0" vlookat="-20.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="013/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="7680" tiledimageheight="7680">
+				<cube url="013/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3840" tiledimageheight="3840">
+				<cube url="013/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1792" tiledimageheight="1792">
+				<cube url="013/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="013/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="014" title="[17-07]DSC_9246-9274_pano" onstart="" thumburl="014/thumb.jpg" lat="43.97853000" lng="39.87414333" heading="0.0">
+
+		<view hlookat="140.0" vlookat="-20.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="014/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="7680" tiledimageheight="7680">
+				<cube url="014/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3840" tiledimageheight="3840">
+				<cube url="014/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1792" tiledimageheight="1792">
+				<cube url="014/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="014/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
 
 </krpano>
