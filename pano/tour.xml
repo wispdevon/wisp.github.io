@@ -21,7 +21,7 @@
 	               thumbs_dragging="true"
 	               thumbs_onhoverscrolling="false"
 	               thumbs_scrollbuttons="false"
-	               thumbs_scrollindicator="false"
+	               thumbs_scrollindicator="true"
 	               thumbs_loop="true"
 	               tooltips_buttons="false"
 	               tooltips_thumbs="false"
