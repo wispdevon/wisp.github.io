@@ -75,7 +75,7 @@
 
 	<scene name="000" title="[11-07]_DSC1038-1066_pano" onstart="" thumburl="000/thumb.jpg" lat="56.19393833" lng="43.81173833" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="auto" />
 
 		<preview url="000/preview.jpg" />
 
@@ -95,7 +95,7 @@
 
 	<scene name="001" title="[11-07]_DSC1154-1182_pano" onstart="" thumburl="001/thumb.jpg" lat="56.19289167" lng="43.81063333" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="auto" />
 
 		<preview url="001/preview.jpg" />
 
@@ -115,7 +115,7 @@
 	
 	<scene name="002" title="[13-06]_DSC6173-6182_pano" onstart="" thumburl="002/thumb.jpg" lat="56.00548833" lng="43.93960333" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="range" vlookatmin="-34.722" vlookatmax="34.722" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="range" vlookatmin="-34.722" vlookatmax="34.722" />
 
 		<preview url="002/preview.jpg" />
 
@@ -138,7 +138,7 @@
 
 	<scene name="003" title="[13-07]270713_pano" onstart="" thumburl="003/thumb.jpg" lat="56.01824500" lng="43.92497500" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="range" vlookatmin="-39.163" vlookatmax="39.163" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="range" vlookatmin="-39.163" vlookatmax="39.163" />
 
 		<preview url="003/preview.jpg" />
 
@@ -158,7 +158,7 @@
 
 	<scene name="004" title="[13-09]_DSC6734-6741_pano" onstart="" thumburl="004/thumb.jpg" lat="44.73728833" lng="34.28775833" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="range" vlookatmin="-34.488" vlookatmax="34.488" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="range" vlookatmin="-34.488" vlookatmax="34.488" />
 
 		<preview url="004/preview.jpg" />
 
@@ -181,7 +181,7 @@
 
 	<scene name="005" title="[13-09]_DSC6752-6761_pano" onstart="" thumburl="005/thumb.jpg" lat="44.77712833" lng="34.37429667" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="range" vlookatmin="-37.080" vlookatmax="37.080" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="range" vlookatmin="-37.080" vlookatmax="37.080" />
 
 		<preview url="005/preview.jpg" />
 
@@ -204,7 +204,7 @@
 
 	<scene name="006" title="[13-09]_DSC6810-6818_pano" onstart="" thumburl="006/thumb.jpg" lat="44.76107833" lng="34.41126333" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="range" vlookatmin="-37.026" vlookatmax="37.026" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="range" vlookatmin="-37.026" vlookatmax="37.026" />
 
 		<preview url="006/preview.jpg" />
 
@@ -227,7 +227,7 @@
 
 	<scene name="007" title="[14-07]DSC_2410-2425_pano" onstart="" thumburl="007/thumb.jpg" lat="56.01225333" lng="43.87863000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="range" vlookatmin="-29.304" vlookatmax="29.304" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="range" vlookatmin="-29.304" vlookatmax="29.304" />
 
 		<preview url="007/preview.jpg" />
 
@@ -250,7 +250,7 @@
 
 	<scene name="008" title="[16-04]DSC_3372-3397_pano" onstart="" thumburl="008/thumb.jpg" lat="56.01825000" lng="43.92516667" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="auto" />
 
 		<preview url="008/preview.jpg" />
 
@@ -273,7 +273,7 @@
 
 	<scene name="009" title="[16-05]DSC_3598-3622_pano" onstart="" thumburl="009/thumb.jpg" lat="55.76195500" lng="44.40022167" heading="0.0">
 
-		<view hlookat="110.0" vlookat="-30.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="auto" />
+		<view hlookat="110.0" vlookat="-30.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="auto" />
 
 		<preview url="009/preview.jpg" />
 
@@ -296,7 +296,7 @@
 
 	<scene name="010" title="[17-07]DSC_7552-7577_pano" onstart="" thumburl="010/thumb.jpg" lat="44.01854833" lng="39.97090500" heading="0.0">
 
-		<view hlookat="-35.0" vlookat="-15.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="auto" />
+		<view hlookat="-35.0" vlookat="-15.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="auto" />
 
 		<preview url="010/preview.jpg" />
 
@@ -319,7 +319,7 @@
 
 	<scene name="011" title="[17-07]DSC_7881-7908_pano" onstart="" thumburl="011/thumb.jpg" lat="44.01854833" lng="39.97090500" heading="0.0">
 
-		<view hlookat="143.0" vlookat="-18.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="auto" />
+		<view hlookat="143.0" vlookat="-18.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="auto" />
 
 		<preview url="011/preview.jpg" />
 
@@ -342,7 +342,7 @@
 
 	<scene name="012" title="[17-07]DSC_8543-8568_pano" onstart="" thumburl="012/thumb.jpg" lat="44.01167000" lng="39.85885667" heading="0.0">
 
-		<view hlookat="150.0" vlookat="-30.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="auto" />
+		<view hlookat="150.0" vlookat="-30.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="auto" />
 
 		<preview url="012/preview.jpg" />
 
@@ -365,7 +365,7 @@
 
 	<scene name="013" title="[17-07]DSC_8742-8768_pano" onstart="" thumburl="013/thumb.jpg" lat="43.97865500" lng="39.88078333" heading="0.0">
 
-		<view hlookat="0.0" vlookat="-20.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="auto" />
+		<view hlookat="0.0" vlookat="-20.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="auto" />
 
 		<preview url="013/preview.jpg" />
 
@@ -388,7 +388,7 @@
 
 	<scene name="014" title="[17-07]DSC_9246-9274_pano" onstart="" thumburl="014/thumb.jpg" lat="43.97853000" lng="39.87414333" heading="0.0">
 
-		<view hlookat="140.0" vlookat="-20.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180" limitview="auto" />
+		<view hlookat="140.0" vlookat="-20.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="auto" />
 
 		<preview url="014/preview.jpg" />
 
@@ -411,7 +411,7 @@
 
 	<scene name="015" title="%5B18-05%5DDJI_0400-4020_pano" onstart="" thumburl="015/thumb.jpg" lat="56.05740000" lng="43.86090167" heading="0.0">
 
-		<view hlookat="0.0" vlookat="30.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180"  limitview="range" vlookatmin="-50" />
+		<view hlookat="0.0" vlookat="30.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160"  limitview="range" vlookatmin="-50" />
 
 		<preview url="015/preview.jpg" />
 
