@@ -411,7 +411,7 @@
 
 	<scene name="015" title="%5B18-05%5DDJI_0400-4020_pano" onstart="" thumburl="015/thumb.jpg" lat="56.05740000" lng="43.86090167" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180"  limitview="range" vlookatmin="-50" />
+		<view hlookat="0.0" vlookat="30.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="180"  limitview="range" vlookatmin="-50" />
 
 		<preview url="015/preview.jpg" />
 
