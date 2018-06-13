@@ -68,7 +68,7 @@
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[16].name); );
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[17].name); );
 		loadscene(get(startscene), null, MERGE);
 		if(startactions !== null, startactions() );
 	</action>
@@ -411,7 +411,7 @@
 
 	<scene name="015" title="%5B18-05%5DDJI_0400-4020_pano" onstart="" thumburl="015/thumb.jpg" lat="56.05740000" lng="43.86090167" heading="0.0">
 
-		<view hlookat="0.0" vlookat="30.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160"  limitview="range" vlookatmin="-50" />
+		<view hlookat="0.0" vlookat="30.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="range" vlookatmin="-50" />
 
 		<preview url="015/preview.jpg" />
 
@@ -434,7 +434,7 @@
 
 	<scene name="016" title="%5B18-05%5DDJI_0443-0464_pano" onstart="" thumburl="016/thumb.jpg" lat="56.33092500" lng="44.00956000" heading="0.0">
 
-		<view hlookat="-120.0" vlookat="20.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160"  limitview="range" vlookatmin="-50" />
+		<view hlookat="-120.0" vlookat="20.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="range" vlookatmin="-50" />
 
 		<preview url="016/preview.jpg" />
 
@@ -450,6 +450,29 @@
 			</level>
 			<level tiledimagewidth="768" tiledimageheight="768">
 				<cube url="016/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="017" title="%5B2018-06-11%5DDJI_10033-10054_pano" onstart="" thumburl="017/thumb.jpg" lat="55.88260333" lng="44.17876500" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="160" limitview="range" vlookatmin="-50" vlookatmax="56" />
+
+		<preview url="017/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="6400" tiledimageheight="6400">
+				<cube url="017/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3200" tiledimageheight="3200">
+				<cube url="017/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="017/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="017/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
 			</level>
 		</image>
 
