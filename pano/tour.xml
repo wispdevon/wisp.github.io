@@ -68,7 +68,7 @@
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[17].name); );
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[18].name); );
 		loadscene(get(startscene), null, MERGE);
 		if(startactions !== null, startactions() );
 	</action>
@@ -473,6 +473,29 @@
 			</level>
 			<level tiledimagewidth="768" tiledimageheight="768">
 				<cube url="017/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+	
+		<scene name="018" title="%5B2018-06-14%5DDJI_0073-0095_pano" onstart="" thumburl="018/thumb.jpg" lat="56.21554167" lng="44.12685333" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-46" />
+
+		<preview url="018/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="6400" tiledimageheight="6400">
+				<cube url="018/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="3200" tiledimageheight="3200">
+				<cube url="018/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="018/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="018/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
 			</level>
 		</image>
 
