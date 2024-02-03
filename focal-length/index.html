@@ -254,7 +254,7 @@
         var xyz = document.getElementById("xyz"); // Get the element
         var switchBtn = document.getElementById("modeSwitch");
 
-        if (xyz.style.display === "block") {
+        if (switchBtn.value.includes("Horizontal")) {
           // Switch to horizontal mode
           xyz.style.display = ""; // Revert to default
           xyz.style.width = "900px"; // Original width
@@ -262,7 +262,7 @@
           switchBtn.value = "Switch to Vertical Mode";
         } else {
           // Switch to vertical mode
-          xyz.style.display = "block"; // Stack vertically
+          xyz.style.display = ""; // Stack vertically
           xyz.style.width = "500px"; // Adjust width for vertical layout
           xyz.style.height = "750px"; // Adjust height as needed
           switchBtn.value = "Switch to Horizontal Mode";
