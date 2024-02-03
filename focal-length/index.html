@@ -90,6 +90,11 @@
       input[type="range"] {
         width: 300px;
       }
+
+      #abc, #xyz {
+        transition: width 0.15s, height 0.15s;
+        transition-timing-function: linear;
+      }
     </style>
   </head>
   <body bgcolor="#111">
@@ -257,14 +262,16 @@
         if (switchBtn.value.includes("Horizontal")) {
           // Switch to horizontal mode
           xyz.style.display = ""; // Revert to default
-          xyz.style.width = "900px"; // Original width
+          xyz.style.display.backgroundSize = "100%"
+          xyz.style.width = xyz.style.backgroundSize.width; // Original width
           xyz.style.height = "600px"; // Original height
           switchBtn.value = "Switch to Vertical Mode";
         } else {
           // Switch to vertical mode
           xyz.style.display = ""; // Stack vertically
+          xyz.style.display.backgroundSize = "100%"
           xyz.style.width = "500px"; // Adjust width for vertical layout
-          xyz.style.height = "750px"; // Adjust height as needed
+          xyz.style.height = xyz.style.backgroundSize.height; // Adjust height as needed
           switchBtn.value = "Switch to Horizontal Mode";
         }
       }
@@ -283,8 +290,8 @@
       function updateImage() {
         var imageUrl = form.elements.imageUrl.value;
         if (imageUrl) {
-          // Set the new background image from the URL
-          document.getElementById("xyz").style.backgroundImage =
+          // Set the new background
+          document.getElementById("xyz").style.background =
             "url('" + imageUrl + "')";
           // Ensure the image is always shown at its full size
           document.getElementById("xyz").style.backgroundSize = "contain";
@@ -359,6 +366,15 @@
       }
 
       function calculate(range) {
+
+        // Align size of xyz abc to height and width of image
+        var draw = document.getElementById("xyz").style;
+        var image = draw.backgroundImage;
+        if (image.width > 0 && image.width != draw.width && image.height != draw.height){
+          draw.width = image.width
+          draw.height = image.height
+        }
+
         if (range) {
           form.elements.lens0.value = form.elements.range0.value;
           form.elements.lens1.value = form.elements.range1.value;
@@ -404,9 +420,10 @@
       }
 
       window.onload = function () {
-        calculate();
+        //#calculate();
         hashing(); // Initialize form and mode based on URL hash
         updateImage();
+        calculate();
       };
     </script>
   </body>
