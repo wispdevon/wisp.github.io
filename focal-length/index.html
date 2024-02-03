@@ -92,6 +92,8 @@
       }
 
       #abc, #xyz {
+        margin: 0 -7px;
+        padding: 7px 6px;
         transition: width 0.15s, height 0.15s;
         transition-timing-function: linear;
       }
@@ -261,16 +263,12 @@
 
         if (switchBtn.value.includes("Horizontal")) {
           // Switch to horizontal mode
-          xyz.style.display = ""; // Revert to default
-          xyz.style.display.backgroundSize = "100%"
-          xyz.style.width = xyz.style.backgroundSize.width; // Original width
-          xyz.style.height = "600px"; // Original height
+          xyz.style.width = "900px"; // Original height
           switchBtn.value = "Switch to Vertical Mode";
         } else {
           // Switch to vertical mode
-          xyz.style.display = ""; // Stack vertically
           xyz.style.display.backgroundSize = "100%"
-          xyz.style.width = "500px"; // Adjust width for vertical layout
+          xyz.style.width = "400px"; // Adjust width for vertical layout
           xyz.style.height = xyz.style.backgroundSize.height; // Adjust height as needed
           switchBtn.value = "Switch to Horizontal Mode";
         }
