@@ -1,428 +1,275 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focal Length Comparison Tool</title>
-    <meta charset="utf-8" />
-    <meta name="language" content="EN" />
-    <meta
-      name="description"
-      content="A simple and easy to use tool for a visual comparison of the focal length and the angle of view of two camera lenses."
-    />
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #333333;
-        color: #333;
-        margin: 0;
-        padding: 0;
-      }
-      * {
-        font-family: Arial;
-      }
+    <link href="main.css" rel="stylesheet">
+</head>
 
-      td {
-        padding: 0 8px;
-      }
-      *:not(#xyz) {
-        text-align: center;
-      }
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
 
-      input[type="button"] {
-        width: 100%;
-        background-color: #4caf50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      input[type="button"]:hover {
-        background-color: #45a049;
-      }
-
-      .main-cont {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .color1,
-      .color2 {
-        padding: 10px;
-        margin-top: 5px;
-        border-radius: 5px;
-      }
-
-      .white-text {
-        color: white;
-      }
-
-      body,
-      tbody {
-        width: 100%;
-      }
-      .vertical {
-        /* Example vertical layout adjustments */
-        flex-direction: column;
-      }
-      .color2 {
-        background-color: #e0f7fa;
-      }
-      input[type="text"],
-      input[type="range"] {
-        width: 100%;
-        padding: 10px;
-        margin: 6px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-
-      .color1 {
-        background-color: #fa3;
-      }
-      .color2 {
-        background-color: #38f;
-      }
-      input[type="range"] {
-        width: 300px;
-      }
-
-      #abc, #xyz {
-        margin: 0 -7px;
-        padding: 7px 6px;
-        transition: width 0.15s, height 0.15s;
-        transition-timing-function: linear;
-      }
-    </style>
-  </head>
-  <body bgcolor="#111">
-    <div class="main-cont">
-      <div id="div">
+    <div id="div" class="text-white">
         <form name="form1">
-          <table cellpadding="0" cellspacing="0">
-            <!-- Base Image URL Input -->
-            <tr height="40">
-              <td colspan="2">
-                <input
-                  type="text"
-                  size="75"
-                  value="https://images.pexels.com/photos/18696928/pexels-photo-18696928/free-photo-of-river-and-waterfall-with-green-hill-behind.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  oninput="updateImage()"
-                  name="imageUrl"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td
-                id="xyz"
-                height="600"
-                width="900"
-                align="center"
-                valign="middle"
-                style="vertical-align: middle; image-rendering: pixelated"
-              >
-                <p id="abc" align="center"></p>
-              </td>
-              <td>
-                <table
-                  height="600"
-                  width="100%"
-                  cellpadding="0"
-                  cellspacing="0"
-                  style="box-shadow: 0 -3px 0 #fa3"
-                >
-                  <tr height="40" class="color1">
-                    <td width="140">Focal length</td>
-                    <td width="60">
-                      <input
-                        type="text"
-                        size="3"
-                        oninput="calculate(0)"
-                        name="lens0"
-                      />
-                    </td>
-                  </tr>
-                  <tr height="40" class="color1">
+            <table class="mx-auto mt-8">
+                <tr class="h-20">
                     <td colspan="2">
-                      <input
-                        type="range"
-                        min="8"
-                        max="300"
-                        step="1"
-                        oninput="calculate(1)"
-                        name="range0"
-                      />
+                        <input type="text" size="75" value="https://wispdevon.github.io/focal-length/base.jpg" oninput="updateImage()" name="imageUrl"
+                            class="text-black w-full p-3 border-1 border-gray-300 rounded-md box-border">
                     </td>
-                  </tr>
-                  <tr height="40" class="color1">
-                    <td id="c0">Crop factor</td>
-                    <td>
-                      <input
-                        type="text"
-                        size="3"
-                        oninput="calculate(0)"
-                        name="crop0"
-                      />
+                </tr>
+                <tr>
+                    <td id="xyz" class="h-96 w-96 bg-center bg-cover relative" style="image-rendering: pixelated">
+                        <p id="abc" class="m-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></p>
                     </td>
-                  </tr>
-                  <tr height="40" class="color1">
-                    <td colspan="2"><a id="a0"></a></td>
-                  </tr>
-                  <tr height="40" class="color2">
-                    <td>Focal length</td>
-                    <td>
-                      <input
-                        type="text"
-                        size="3"
-                        oninput="calculate(0)"
-                        name="lens1"
-                      />
-                    </td>
-                  </tr>
-                  <tr height="40" class="color2">
-                    <td colspan="2">
-                      <input
-                        type="range"
-                        min="8"
-                        max="300"
-                        step="1"
-                        oninput="calculate(1)"
-                        name="range1"
-                      />
-                    </td>
-                  </tr>
-                  <tr height="40" class="color2">
-                    <td id="c1">Crop factor</td>
-                    <td>
-                      <input
-                        type="text"
-                        size="3"
-                        oninput="calculate(0)"
-                        name="crop1"
-                      />
-                    </td>
-                  </tr>
-                  <tr height="40" class="color2">
-                    <td colspan="2"><a id="a1"></a></td>
-                  </tr>
-                  <!-- Mode Switch Button -->
-                  <tr height="40">
-                    <td colspan="3">
-                      <input
-                        type="button"
-                        value="Switch to Vertical Mode"
-                        id="modeSwitch"
-                        onclick="toggleMode()"
-                      />
-                    </td>
-                  </tr>
+                    <td class="pl-8">
+                        <table class="h-96 w-full border-t-2 border-solid border-blue-500" style="margin-bottom: 8px;">
+                            <tr class="color1">
+                                <td class="w-32">Focal length</td>
+                                <td class="w-16">
+                                    <input type="text" size="3" oninput="calculate(0)" name="lens0"
+                                        class="text-black w-full p-3 border-1 border-gray-300 rounded-md box-border">
+                                </td>
+                            </tr>
+                            <tr class="color1">
+                                <td colspan="2">
+                                    <input type="range" min="8" max="300" step="1" oninput="calculate(1)" name="range0"
+                                        class="text-black w-full p-3 border-1 border-gray-300 rounded-md box-border">
+                                </td>
+                            </tr>
+                            <tr class="color1">
+                                <td id="c0">Crop factor</td>
+                                <td>
+                                    <input type="text" size="3" oninput="calculate(0)" name="crop0"
+                                        class="text-black w-full p-3 border-1 border-gray-300 rounded-md box-border">
+                                </td>
+                            </tr>
+                            <tr class="color1">
+                                <td colspan="2"><a id="a0"></a></td>
+                            </tr>
+                            <tr class="color2">
+                                <td class="border-t-2 border-solid border-orange-500" colspan="2"></td>
+                            </tr>
+                            <tr class="color2">
+                                <td>Focal length</td>
+                                <td>
+                                    <input type="text" size="3" oninput="calculate(0)" name="lens1"
+                                        class="text-black w-full p-3 border-1 border-gray-300 rounded-md box-border">
+                                </td>
+                            </tr>
+                            <tr class="color2">
+                                <td colspan="2">
+                                    <input type="range" min="8" max="300" step="1" oninput="calculate(1)" name="range1"
+                                        class="text-black w-full p-3 border-1 border-gray-300 rounded-md box-border">
+                                </td>
+                            </tr>
+                            <tr class="color2">
+                                <td id="c1">Crop factor</td>
+                                <td>
+                                    <input type="text" size="3" oninput="calculate(0)" name="crop1"
+                                        class="text-black w-full p-3 border-1 border-gray-300 rounded-md box-border">
+                                </td>
+                            </tr>
+                            <tr class="color2">
+                                <td colspan="2"><a id="a1"></a></td>
+                            </tr>
+                            <tr class="h-20">
+                                <td colspan="2">
+                                    <input type="button" value="Switch to Horizontal Mode" id="modeSwitch"
+                                        onclick="toggleMode()" class="w-full bg-green-500 text-white p-3 mt-2 rounded-md cursor-pointer transition duration-300 ease-in-out transform hover:scale-105">
+                                </td>
+                            </tr>
 
-                  <tr height="120">
-                    <td colspan="3">
-                      <input
-                        type="button"
-                        value="Create link"
-                        onclick="linking()"
-                        style="font-size: 14pt"
-                      />
+                            <tr class="h-32">
+                                <td colspan="2">
+                                    <input type="button" value="Create link" onclick="linking()" style="font-size: 14pt"
+                                        class="w-full bg-green-500 text-white p-3 mt-2 rounded-md cursor-pointer transition duration-300 ease-in-out transform hover:scale-105">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                            </tr>
+                        </table>
                     </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td class="white-text">
-                Credits to pexels for base image used for testing purposes
-              </td>
-              <td class="white-text">
-                Fork of and inspired by:
-                https://morn91.github.io/exx/focal-length/
-              </td>
-            </tr>
-            <tr>
-              <td class="white-text">
-                also if anyone knows how to vertically center this with flex dm
-                me on discord @wispcream, thanks
-              </td>
-            </tr>
-          </table>
+                </tr>
+                <tr>
+                    <td class="text-white mt-4">
+                        Forked from and inspired by: https://morn91.github.io/exx/focal-length/
+                    </td>
+                </tr>
+            </table>
         </form>
-      </div>
     </div>
     <script>
-      function toggleMode() {
-        var xyz = document.getElementById("xyz"); // Get the element
-        var switchBtn = document.getElementById("modeSwitch");
+        function toggleMode() {
+            var xyz = document.getElementById("xyz"); // Get the element
+            var switchBtn = document.getElementById("modeSwitch");
 
-        if (switchBtn.value.includes("Horizontal")) {
-          // Switch to horizontal mode
-          xyz.style.width = "900px"; // Original height
-          switchBtn.value = "Switch to Vertical Mode";
-        } else {
-          // Switch to vertical mode
-          xyz.style.display.backgroundSize = "100%"
-          xyz.style.width = "400px"; // Adjust width for vertical layout
-          xyz.style.height = xyz.style.backgroundSize.height; // Adjust height as needed
-          switchBtn.value = "Switch to Horizontal Mode";
-        }
-      }
-
-      form = document.forms.form1;
-      // images = [5, 15, 45];
-      def = [28, 1, 16, 1];
-      color = ["#fa3", "#38f"];
-      qwer = ["a0", "a1"];
-      rewq = ["c0", "c1"];
-      // document.imagespreload = new Array(images.length);
-      // for (i = 0; i < images.length; i++) {
-      //   document.imagespreload[i] = new Image();
-      //   document.imagespreload[i].src = images[i] + ".jpg";
-      // }
-      function updateImage() {
-        var imageUrl = form.elements.imageUrl.value;
-        if (imageUrl) {
-          // Set the new background
-          document.getElementById("xyz").style.background =
-            "url('" + imageUrl + "')";
-          // Ensure the image is always shown at its full size
-          document.getElementById("xyz").style.backgroundSize = "contain";
-          document.getElementById("xyz").style.backgroundRepeat = "no-repeat";
-          document.getElementById("xyz").style.backgroundPosition = "center";
-        }
-      }
-
-      // Modify the calculate function or relevant part of your script to use the new image logic accordingly.
-
-      function ascending(a, b) {
-        if (a > b) return 1;
-        if (a < b) return -1;
-      }
-      function lens(n) {
-        // if (f[n] >= images[0])
-        //   document.getElementById(qwer[n]).style.color = "#000";
-        // else document.getElementById(qwer[n]).style.color = "#f00";
-        if (f[n] > 0 && c[n] > 0) {
-          if (c[n] == 1)
-            document.getElementById(rewq[n]).innerHTML = "Crop factor";
-          else
-            document.getElementById(rewq[n]).innerHTML =
-              "Crop factor<br/>(" + Math.round(f[n] * 10) / 10 + " mm)";
-          document.getElementById(qwer[n]).innerHTML =
-            Math.round((Math.atan(18 / f[n]) * 3600) / Math.PI) / 10 +
-            "° × " +
-            Math.round((Math.atan(12 / f[n]) * 3600) / Math.PI) / 10 +
-            "°";
-        } else {
-          document.getElementById(qwer[n]).innerHTML = "Error!";
-          document.getElementById(rewq[n]).innerHTML = "Crop factor";
-        }
-      }
-
-      function linking() {
-        var baseImageUrl = encodeURIComponent(form.elements.imageUrl.value);
-        var lens0 = form.elements.lens0.value;
-        var crop0 = form.elements.crop0.value;
-        var lens1 = form.elements.lens1.value;
-        var crop1 = form.elements.crop1.value;
-
-        var modeBtn = document.getElementById("modeSwitch");
-        var mode = modeBtn.value.includes("Horizontal")
-          ? "horizontal"
-          : "vertical";
-
-        window.location.hash = `lens0=${lens0}&crop0=${crop0}&lens1=${lens1}&crop1=${crop1}&imgUrl=${baseImageUrl}&mode=${mode}`;
-      }
-
-      function hashing() {
-        var hash = window.location.hash.substr(1);
-        var params = new URLSearchParams(hash);
-
-        form.elements.lens0.value = params.get("lens0") || def[0];
-        form.elements.crop0.value = params.get("crop0") || def[1];
-        form.elements.lens1.value = params.get("lens1") || def[2];
-        form.elements.crop1.value = params.get("crop1") || def[3];
-        var imgUrl = params.get("imgUrl");
-        if (imgUrl) {
-          form.elements.imageUrl.value = decodeURIComponent(imgUrl);
-          updateImage();
-        }
-
-        // Set the layout mode based on the URL hash
-        var mode = params.get("mode");
-        if (mode === "vertical") {
-          toggleMode(); // Ensure this toggles to vertical if not already set
-        }
-
-        calculate();
-      }
-
-      function calculate(range) {
-
-        // Align size of xyz abc to height and width of image
-        var draw = document.getElementById("xyz").style;
-        var image = draw.backgroundImage;
-        if (image.width > 0 && image.width != draw.width && image.height != draw.height){
-          draw.width = image.width
-          draw.height = image.height
-        }
-
-        if (range) {
-          form.elements.lens0.value = form.elements.range0.value;
-          form.elements.lens1.value = form.elements.range1.value;
-        } else {
-          form.elements.range0.value = form.elements.lens0.value;
-          form.elements.range1.value = form.elements.lens1.value;
-        }
-        f = [+form.elements.lens0.value, +form.elements.lens1.value];
-        c = [+form.elements.crop0.value, +form.elements.crop1.value];
-        f[0] = f[0] * c[0];
-        f[1] = f[1] * c[1];
-        lens(0);
-        lens(1);
-        if (f[0] >= 0 && f[1] >= 0) {
-          document.getElementById("abc").style.opacity = 1;
-          if (f[0] > f[1]) {
-            document.getElementById("abc").style.outline =
-              "3px solid " + color[0];
-            document.getElementById("xyz").style.outline =
-              "3px solid " + color[1];
-          } else {
-            if (f[0] < f[1]) {
-              document.getElementById("abc").style.outline =
-                "3px solid " + color[1];
-              document.getElementById("xyz").style.outline =
-                "3px solid " + color[0];
+            if (switchBtn.value.includes("Horizontal")) {
+                // Switch to horizontal mode
+                xyz.style.width = "900px"; // Original height
+                switchBtn.value = "Switch to Vertical Mode";
             } else {
-              document.getElementById("abc").style.outline =
-                "3px solid " + color[0];
-              document.getElementById("xyz").style.outline =
-                "3px dashed " + color[1];
+                // Switch to vertical mode
+                xyz.style.display.backgroundSize = "100%"
+                xyz.style.width = "400px"; // Adjust width for vertical layout
+                xyz.style.height = xyz.style.backgroundSize.height; // Adjust height as needed
+                switchBtn.value = "Switch to Horizontal Mode";
             }
-          }
-          f.sort(ascending);
-
-          y = (f[0] / f[1]) * 100;
-          document.getElementById("abc").style.width = y + "%";
-          document.getElementById("abc").style.height = y + "%";
-        } else {
-          document.getElementById("xyz").style.outline = "3px solid #f00";
-          document.getElementById("abc").style.opacity = 0;
         }
-      }
 
-      window.onload = function () {
-        //#calculate();
-        hashing(); // Initialize form and mode based on URL hash
-        updateImage();
-        calculate();
-      };
+        form = document.forms.form1;
+        // images = [5, 15, 45];
+        def = [28, 1, 16, 1];
+        color = ["#fa3", "#38f"];
+        qwer = ["a0", "a1"];
+        rewq = ["c0", "c1"];
+        // document.imagespreload = new Array(images.length);
+        // for (i = 0; i < images.length; i++) {
+        //   document.imagespreload[i] = new Image();
+        //   document.imagespreload[i].src = images[i] + ".jpg";
+        // }
+        function updateImage() {
+            var imageUrl = form.elements.imageUrl.value;
+            if (imageUrl) {
+                // Set the new background
+                document.getElementById("xyz").style.background =
+                    "url('" + imageUrl + "')";
+                // Ensure the image is always shown at its full size
+                document.getElementById("xyz").style.backgroundSize = "contain";
+                document.getElementById("xyz").style.backgroundRepeat = "no-repeat";
+                document.getElementById("xyz").style.backgroundPosition = "center";
+            }
+        }
+
+        // Modify the calculate function or relevant part of your script to use the new image logic accordingly.
+
+        function ascending(a, b) {
+            if (a > b) return 1;
+            if (a < b) return -1;
+        }
+
+        function lens(n) {
+            // if (f[n] >= images[0])
+            //   document.getElementById(qwer[n]).style.color = "#000";
+            // else document.getElementById(qwer[n]).style.color = "#f00";
+            if (f[n] > 0 && c[n] > 0) {
+                if (c[n] == 1)
+                    document.getElementById(rewq[n]).innerHTML = "Crop factor";
+                else
+                    document.getElementById(rewq[n]).innerHTML =
+                        "Crop factor<br/>(" + Math.round(f[n] * 10) / 10 + " mm)";
+                document.getElementById(qwer[n]).innerHTML =
+                    Math.round((Math.atan(18 / f[n]) * 3600) / Math.PI) / 10 +
+                    "° × " +
+                    Math.round((Math.atan(12 / f[n]) * 3600) / Math.PI) / 10 +
+                    "°";
+            } else {
+                document.getElementById(qwer[n]).innerHTML = "Error!";
+                document.getElementById(rewq[n]).innerHTML = "Crop factor";
+            }
+        }
+
+        function linking() {
+            var baseImageUrl = encodeURIComponent(form.elements.imageUrl.value);
+            var lens0 = form.elements.lens0.value;
+            var crop0 = form.elements.crop0.value;
+            var lens1 = form.elements.lens1.value;
+            var crop1 = form.elements.crop1.value;
+
+            var modeBtn = document.getElementById("modeSwitch");
+            var mode = modeBtn.value.includes("Horizontal")
+                ? "horizontal"
+                : "vertical";
+
+            window.location.hash = `lens0=${lens0}&crop0=${crop0}&lens1=${lens1}&crop1=${crop1}&imgUrl=${baseImageUrl}&mode=${mode}`;
+        }
+
+        function hashing() {
+            var hash = window.location.hash.substr(1);
+            var params = new URLSearchParams(hash);
+
+            form.elements.lens0.value = params.get("lens0") || def[0];
+            form.elements.crop0.value = params.get("crop0") || def[1];
+            form.elements.lens1.value = params.get("lens1") || def[2];
+            form.elements.crop1.value = params.get("crop1") || def[3];
+            var imgUrl = params.get("imgUrl");
+            if (imgUrl) {
+                form.elements.imageUrl.value = decodeURIComponent(imgUrl);
+                updateImage();
+            }
+
+            // Set the layout mode based on the URL hash
+            var mode = params.get("mode");
+            if (mode === "vertical") {
+                toggleMode(); // Ensure this toggles to vertical if not already set
+            }
+
+            calculate();
+        }
+
+        function calculate(range) {
+
+            // Align size of xyz abc to height and width of image
+            var draw = document.getElementById("xyz").style;
+            var image = draw.backgroundImage;
+            if (image.width > 0 && image.width != draw.width && image.height != draw.height) {
+                draw.width = image.width
+                draw.height = image.height
+            }
+
+            if (range) {
+                form.elements.lens0.value = form.elements.range0.value;
+                form.elements.lens1.value = form.elements.range1.value;
+            } else {
+                form.elements.range0.value = form.elements.lens0.value;
+                form.elements.range1.value = form.elements.lens1.value;
+            }
+            f = [+form.elements.lens0.value, +form.elements.lens1.value];
+            c = [+form.elements.crop0.value, +form.elements.crop1.value];
+            f[0] = f[0] * c[0];
+            f[1] = f[1] * c[1];
+            lens(0);
+            lens(1);
+            if (f[0] >= 0 && f[1] >= 0) {
+                document.getElementById("abc").style.opacity = 1;
+                if (f[0] > f[1]) {
+                    document.getElementById("abc").style.outline =
+                        "3px solid " + color[0];
+                    document.getElementById("xyz").style.outline =
+                        "3px solid " + color[1];
+                } else {
+                    if (f[0] < f[1]) {
+                        document.getElementById("abc").style.outline =
+                            "3px solid " + color[1];
+                        document.getElementById("xyz").style.outline =
+                            "3px solid " + color[0];
+                    } else {
+                        document.getElementById("abc").style.outline =
+                            "3px solid " + color[0];
+                        document.getElementById("xyz").style.outline =
+                            "3px dashed " + color[1];
+                    }
+                }
+                f.sort(ascending);
+
+                y = (f[0] / f[1]) * 100;
+                document.getElementById("abc").style.width = y + "%";
+                document.getElementById("abc").style.height = y + "%";
+            } else {
+                document.getElementById("xyz").style.outline = "3px solid #f00";
+                document.getElementById("abc").style.opacity = 0;
+            }
+        }
+
+        window.onload = function () {
+            //#calculate();
+            hashing(); // Initialize form and mode based on URL hash
+            updateImage();
+            calculate();
+        };
     </script>
-  </body>
+</body>
+
 </html>
